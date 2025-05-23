@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .gallery {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s, filter 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      filter: grayscale(100%) blur(1px);
+      transform: scale(1.05);
+    }
+
+      </style>
+</head>
+<body>
+
+<nav>
+  <strong>My Photography Portfolio</strong>
+</nav>
+
+<div class="gallery">
+  <a href="#img1"><img src="images/rose.jpg" alt="Photo 1"></a>
+  <a href="#img2"><img src="images/jas.jpg" alt="Photo 2"></a>
+  <a href="#img3"><img src="images/yel.jpg" alt="Photo 3"></a>
+  <a href="#img4"><img src="images/ear.jpg" alt="Photo 4"></a>
+</div>
+
+
+</body>
+</html>
